@@ -1,0 +1,990 @@
+/* Basic styling, you can customize this further */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+
+/* Style the home section */
+.home-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('temple.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.home-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.profiles-image {
+    width: 100px; /* Adjust the size as needed */
+    height: 100px; /* Adjust the size as needed */
+    border-radius: 50%; /* Creates a circular shape */
+    overflow: hidden; /* Hides the image overflow */
+    margin: 0 auto; /* Centers the image horizontally */
+}
+
+.profiles-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the circular container */
+}
+
+.home-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #e74c3c; /* Button background color */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+
+    
+}
+
+.btn-primary:hover {
+    background-color: #c0392b; /* Darker shade on hover */
+}
+
+.home-image img {
+    max-width: 70%;
+    height: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add a subtle shadow to the image */
+}
+
+
+
+/* Additional styles for header section */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    margin-top:1%;
+    width: 100%;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    
+}
+
+.logo h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.logo .highlight {
+    color: #42b883; /* Highlight color */
+    font-weight: 700; /* Add font weight */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    margin-left: 320px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: opacity 0.3s;
+}
+
+.nav-links a:hover {
+    opacity: 0.8;
+}
+
+/* Add this to your styles.css */
+.profile {
+    display: flex;
+    align-items: left;
+    cursor: pointer;
+    margin-left: auto;
+    padding: 10px;
+    position: relative;
+}
+
+.profile-dropdown {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: -10%;
+    
+}
+
+.profile-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.profile-menu.show {
+    display: block;
+}
+
+.profile-item {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+.profile-item:hover {
+    background-color: #f8f8f8;
+}
+
+.sp {
+    padding: 10px;
+    border-left: 1px solid #ddd;
+    margin-left: 10px;
+}
+.sp:hover {
+    color: #34a172;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+section {
+    margin: 2rem;
+}
+
+.hero {
+    background-image: url('temple.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 150px 0;
+}
+/* Additional styles for About Us section */
+
+.ev .highlight {
+    color: #42b883; /* Highlight color */
+}
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 300px;
+}
+
+.about-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.about-content strong {
+    font-weight: bold;
+    color: #333;
+}
+.about-container {
+    position: relative; /* Position the container as a reference for the pseudo-element */
+    padding: 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-container::before {
+    content: ""; /* Create a pseudo-element */
+    position: absolute; /* Position the pseudo-element */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    box-shadow: 10px 7px 10px 10px rgba(0, 0, 0, 0.1);/* Shadow effect */
+    z-index: -1; /* Place the pseudo-element behind the content */
+}
+/* Style the circular profile images */
+.profile-image {
+    width: 100px; /* Adjust the size as needed */
+    height: 100px; /* Adjust the size as needed */
+    border-radius: 50%; /* Creates a circular shape */
+    overflow: hidden; /* Hides the image overflow */
+    margin: 0 auto; /* Centers the image horizontally */
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the circular container */
+}
+
+
+
+
+/* Additional styles for icons */
+.icon {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Additional styles for icons */
+.icon {
+    font-size: 3rem;
+    color: #333;
+}
+
+
+.event, .announcement, .update {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+/* Additional styles for upcoming events */
+
+
+.slideshow-container {
+    position: relative;
+    max-width: 86%; /* Adjust as needed */
+    margin: 0 auto;
+    overflow: hidden; /* Hide overflowing content */
+    
+}
+
+/* Individual Slides */
+.event-slides {
+    gap: 200px;
+    display: flex;
+    animation: slide 20s linear infinite; /* Adjust duration as needed */
+}
+
+.event-slide1 {
+    flex: 0 0 25%; /* Adjust slide width as needed (25% for four slides, 33.33% for three, etc.) */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 6px;
+    box-sizing: border-box;
+    
+}
+.event-slide2 {
+    flex: 0 0 25%; /* Adjust slide width as needed (25% for four slides, 33.33% for three, etc.) */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 6px;
+    box-sizing: border-box;
+}
+.event-slide3 {
+    flex: 0 0 25%; /* Adjust slide width as needed (25% for four slides, 33.33% for three, etc.) */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 6px;
+    box-sizing: border-box;
+}
+.event-slide4 {
+    flex: 0 0 25%; /* Adjust slide width as needed (25% for four slides, 33.33% for three, etc.) */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 6px;
+    box-sizing: border-box;
+}
+
+.event-slide img {
+    width: 100%;
+    max-height: 300px; /* Adjust the max-height as needed */
+    object-fit: cover;
+
+}
+
+.event-slide h3 {
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+
+.event-slide p {
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+
+.read-more {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #42b883;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: auto;
+    transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: #357d5a;
+}
+
+/* Keyframes for the slide animation */
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%); /* Adjust distance to control speed */
+    }
+}
+
+/* Dots to indicate slide position */
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #42b883;
+}
+
+/* Center the dots */
+.ev .dot {
+    display: block;
+    text-align: center;
+}
+
+/* Add more specific styling as needed */
+
+
+
+
+
+
+
+/* Additional styles for booking section */
+.vazhipadu-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('shiva.jpeg');
+    background-size: contain;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Allow wrapping for responsive design */
+    position: relative; /* Position the container as a reference for the pseudo-element */
+    padding: 100px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.vazhipadu-container::before {
+    content: ""; /* Create a pseudo-element */
+    position: absolute; /* Position the pseudo-element */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    box-shadow: 10px 7px 10px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    z-index: -1; /* Place the pseudo-element behind the content */
+}
+.h2  {
+    margin-left: 40%;
+    margin-bottom: 4%;
+}
+
+.vazhipadu {
+  
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 150px; /* Set width for each box */
+    text-align: center;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.vazhipadu:hover {
+    transform: translateY(-5px);
+}
+
+.vazhipadu h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.vazhipadu p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.vazhipadu .book-button {
+    background-color: #42b883;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+}
+
+.vazhipadu .book-button:hover {
+    background-color: rgb(115, 195, 221);
+}
+
+
+/* Additional styles for booking details section */
+.booking-form {
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    padding: 7px 130px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: none;
+    margin-top: 20px; /* Add some spacing from the vazhipadu cards */
+    max-width: 390px; /* Limit the maximum width */
+    margin: 0 auto; /* Center the form */
+    position: relative; 
+}
+.back-arrow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #42b883; /* Highlight color */
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.back-arrow:hover {
+    color: #34a172; /* Darker green on hover */
+}
+
+.booking-form h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    margin-left: 10%;
+    color: #333;
+}
+
+.booking-form label {
+    font-size: 1rem;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.booking-form input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.booking-form input:focus {
+    border-color: #42b883; /* Highlight color */
+}
+
+.booking-form button {
+    background-color: #42b883;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%; /* Button width 100% of container */
+    margin-top: 15px;
+}
+
+.booking-form button:hover {
+    background-color: #34a172; /* Darker green on hover */
+}
+
+@media print {
+    #printButton {
+        display: none;
+    }
+}
+
+
+/* Rest of the styles remain unchanged */
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 7%;
+}
+.video {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 7%;
+}
+.ph {
+    position: absolute;
+    left: 42%;
+    font-size: 150%;
+    color: darkgoldenrod;
+
+}
+.vu {
+    position: absolute;
+    left: 42%;
+    font-size: 150%;
+    color: darkgoldenrod;
+}
+.ph:hover {
+    color: black;
+}
+.vu:hover {
+    color: black;
+}
+/* Style for the download icon */
+.download-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    padding: 8px;
+    text-decoration: none;
+}
+
+/* Style for the overlay */
+.download-overlay {
+    position: relative;
+    display: inline-block;
+}
+
+/* Centering the icon horizontally and vertically */
+.download-overlay img,
+.download-overlay video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* Adding some padding to the overlay */
+.gallery-item {
+    padding: 10px;
+}
+
+.gallery-item {
+    
+    max-width: 300px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.gallery-item:hover {
+    transform: translateY(-10px);
+}
+
+.gallery-item img,
+.gallery-item video {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2px 0;
+    box-sizing: 10%;
+    
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.footer-logo {
+    flex: 1;
+}
+
+.footer-logo h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.footer-logo p {
+    font-size: 1rem;
+    color: #aaa;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-links h3 {
+    margin-left: -42%;
+}
+.footer-links ul {
+    margin-left: -39%;
+    margin-bottom: -10%;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    display: inline-block;
+    transition: opacity 0.3s;
+}
+
+.footer-links a:hover {
+    opacity: 0.8;
+}
+
+.footer-contact p {
+    font-size: 1rem;
+    color: #aaa;
+    margin: 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    bottom: 40%;
+}
+
+/* Rest of the styles remain unchanged */
+
+/* Reset default margins and paddings */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Additional styles for contact us section */
+.contact-section {
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 13px 7px 20px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 30px; /* Add spacing from the previous section */
+    max-width: 400px; /* Limit the maximum width */
+    margin: 0 auto;
+    margin-bottom: 6%; /* Center the section */
+    
+}
+.cont h2 {
+    margin-bottom: 2%;
+    margin-left: 40%;
+    font-size: 280%;
+}
+
+.contact-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    margin-left: -30%;
+    color: #333;
+}
+
+
+
+contact-container::before {
+    content: ""; /* Create a pseudo-element */
+    position: absolute; /* Position the pseudo-element */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    box-shadow: 13px 7px 20px 20px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    z-index: -1; /* Place the pseudo-element behind the content */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form label {
+    font-size: 1rem;
+    color: #555;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #42b883; /* Highlight color */
+}
+
+.contact-form textarea {
+    resize: vertical;
+    height: 120px; /* Set a fixed height for textarea */
+}
+
+.contact-form button {
+    background-color: #42b883;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 54px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #34a172; /* Darker green on hover */
+}
+
+/* Rest of the styles remain unchanged */
+
+
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Additional styles for icons */
+.icon {
+    font-size: 24px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Hero section styles */
+.hero {
+    background-image: url('temple.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 200px 0;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Section styles */
+section {
+    padding: 4rem 0;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Vazhipadu styles */
+.vazhipadu {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.vazhipadu:hover {
+    transform: translateY(-5px);
+}
+
+.vazhipadu h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.vazhipadu p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.book-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.book-button:hover {
+    background-color: #555;
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+}
+/* Additional styles for footer section */
+
